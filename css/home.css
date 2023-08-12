@@ -4,12 +4,27 @@ body{
 }
 
 .menu{
+    position: absolute;
+    top: 40%;
+    left:45%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    scale: 0.75;
+    width: 639px;
+    height: 707px;
     display: grid;
     grid-template-columns: 373px 318px;
     grid-template-rows: 492px 278px;
-    
 }
 
 .menu svg:nth-child(2){
-    transform: translate(-50px);
+    transform: translate(-50px, 4px);
+}
+
+.menu svg:nth-child(3){
+    transform: translate(0px, -31px);
+}
+
+.menu svg:nth-child(4){
+    transform: translate(-50px, -58px);
 }
