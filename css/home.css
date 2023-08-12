@@ -1,0 +1,15 @@
+body{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 373px 318px;
+    grid-template-rows: 492px 278px;
+    
+}
+
+.menu svg:nth-child(2){
+    transform: translate(-50px);
+}
