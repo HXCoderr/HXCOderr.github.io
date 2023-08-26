@@ -2,23 +2,78 @@ body{
     height: 100vh;
     background-color: black;
     color: whitesmoke;
+    overflow: hidden;
+    background-size: cover;
+    
 }
 
 .menu{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     position: absolute;
-    height: 100%;
-    width: 100%;
+    height: 75%;
+    aspect-ratio: 1/1;
     margin: 0px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
 }
 
-.menu svg{
+.menu:before{
+    content: 'PORTFOLIO';
     position: absolute;
+    left: 52%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    font-size: 700%;
+    z-index: 2;
 }
 
-.menu svg:nth-child(2){
-    left: 100%;
-    transform: translateX(-100%);
+.menu svg{
+    opacity: 0.69;
+    transform-origin: center;
+    scale: 0.9;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s all ease-in-out;
+}
+.menu svg:hover{
+    z-index: 3;
+    opacity: 1;
+    scale: 0.98;
+}
+
+.menu .menu-1 h1{
+    position: relative;
+    left:0%;
+    top: 0%;
+    transform: translate(37%,-400%);
+}
+
+.menu .menu-2 h1{
+    position: relative;
+    left:0%;
+    top: 0%;
+    transform: translate(30%,-400%);
+}
+
+.menu .menu-3 h1{
+    position: relative;
+    left:0%;
+    top: 0%;
+    transform: translate(24%,-500%);
+}
+
+.menu .menu-4 h1{
+    position: relative;
+    left:0%;
+    top: 0%;
+    transform: translate(37%,-400%);
+}
+
+.menu div:hover h1{
+    display: none;
 }
