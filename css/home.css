@@ -21,12 +21,12 @@ html {
 .introduction{
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    height: 60%;
-    width: 60%;
+    height: 50%;
+    width: 50%;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -38,9 +38,18 @@ html {
 .introduction .name h1{
     padding: 3px;
     position: absolute;
-    left: 5%;
+    left: 2%;
     top: -1%;
     font-size: 275%;
+}
+
+.introduction .about-me{
+    position: relative;
+    word-wrap: break-word;
+    top: 20%;
+    font-size: 170%;
+    width: 96%;
+    margin: 2%;
 }
 
 .menu{
