@@ -73,7 +73,7 @@ html {
 }
 
 .menu:before{
-    content: 'Menu';
+    content: 'Explore!';
     text-transform: uppercase;
     position: absolute;
     left: 52%;
