@@ -5,7 +5,7 @@ body{
     background-attachment: fixed;
     height: 100vh;
     background-color: black;
-    color: rgb(150, 44, 44);
+    color: rgb(0, 0, 0);
 }
 
 html::-webkit-scrollbar {
@@ -15,6 +15,11 @@ html::-webkit-scrollbar {
 html {
     -ms-overflow-style: none;  
     scrollbar-width: none; 
+}
+
+a{
+    text-decoration: none ;
+    color: rgba(0, 0, 0, 0.695);
 }
 
 .content{
@@ -28,6 +33,12 @@ html {
 }
 
 .info{
+    background: rgba(112, 112, 112, 0.6);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.5px);
+    -webkit-backdrop-filter: blur(9.5px);
+    border: 1px solid rgba(201, 201, 201, 0.3);
     position: relative;
     display: grid;
     grid-template-columns: 80% 20%;
@@ -36,7 +47,6 @@ html {
     margin-top: .5%;
     margin-bottom: .5%;
     height:25%;
-    background-color: white;
     width: 99.4%;
 }
 
@@ -51,6 +61,10 @@ html {
 }
 
 .content .info img, .content .info video{
+    -webkit-box-shadow: 0px 0px 56px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 56px 0px rgba(0,0,0,1);
+    box-shadow: 0px 0px 56px 0px rgba(0,0,0,1);
+    border-radius: 6px;
     object-fit: fill;
     transition: .3s all ease-in-out;
     background-color: black;
