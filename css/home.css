@@ -2,15 +2,40 @@ body{
     height: 100vh;
     background-color: black;
     color: whitesmoke;
-    overflow: hidden;
+    background-attachment: fixed;
+    overflow-x: hidden;
     background-size: cover;
-    
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+html::-webkit-scrollbar {
+display: none;
+}
+
+html {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+}
+
+.introduction{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 60%;
+    width: 60%;
+    background: rgba(0, 0, 0, 0.19);
+    border-radius: 6px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.1px);
+    -webkit-backdrop-filter: blur(8.1px);
 }
 
 .menu{
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 135%;
+    transform: translate(-50%, -40%);
     position: absolute;
     height: 75%;
     aspect-ratio: 1/1;
@@ -18,10 +43,18 @@ body{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
+    opacity: 0;
+    transition: .7s ease-in-out;
+}
+
+.scrolled{
+    opacity: 1;
+    transform: translate(-50%, -50%);
 }
 
 .menu:before{
-    content: 'PORTFOLIO';
+    content: 'Menu';
+    text-transform: uppercase;
     position: absolute;
     left: 52%;
     top: 52%;
@@ -71,7 +104,7 @@ body{
     position: relative;
     left:0%;
     top: 0%;
-    transform: translate(37%,-400%);
+    transform: translate(29%,-380%);
 }
 
 .menu div:hover h1{
